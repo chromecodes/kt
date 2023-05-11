@@ -125,6 +125,15 @@ body {
   padding-right: 1rem;
 }
 
+.pagesCnt > div > div {
+  margin: 8px;
+  border-left: 3px solid rgba(209, 201, 201, 0.5);
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .main {
   width: 82%;
 }
@@ -145,7 +154,10 @@ body {
 img {
   width: 2rem;
 }
-
+.search > input {
+  outline: none;
+  border: none;
+}
 .search::before {
   display: inline-block;
   text-rendering: auto;
@@ -208,4 +220,121 @@ img {
   background-color: rgb(56, 125, 255);
   border: 0;
   border-radius: 5px;
+}
+.content {
+  margin: 2rem;
+  border: 0.1px solid rgba(209, 201, 201, 0.5);
+  border-radius: 15px;
+  height: 500px;
+  box-shadow: 2px 2px 10px 0px rgba(209, 201, 201, 0.7);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.searchbar {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.searchbar > .right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.searchbar > .search {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(209, 201, 201, 0.5);
+}
+.searchbar > .search > input {
+  border: none;
+  outline: none;
+}
+.del {
+  padding: 6px 12px;
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.del::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-regular);
+  content: "\f2ed";
+  padding-right: 6px;
+}
+.table {
+  flex-grow: 1;
+}
+
+.r1 {
+  padding: 1rem 8px;
+  background-color: #f8fafd;
+  display: grid;
+  grid-template-columns: 5% 20% 20% 15% 15% 18% 7%;
+}
+.r1 > span::after {
+  content: url(https://img.icons8.com/ios-glyphs/14/dde1ee/sort.png);
+  cursor: pointer;
+}
+.r1 > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.r2 {
+  padding: 1rem 8px;
+
+  display: grid;
+  grid-template-columns: 5% 20% 20% 15% 15% 18% 7%;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.c2 {
+  gap: 1rem;
+}
+.c2 > span,
+.c5 > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.c2 > span::before {
+  content: url(https://img.icons8.com/fluency-systems-regular/36/user.png);
+}
+.ac::before {
+  content: url(https://img.icons8.com/material-outlined/12/03C9A6/filled-circle--v1.png);
+}
+.dc::before {
+  content: url(https://img.icons8.com/material-outlined/12/ed4c78/filled-circle--v1.png);
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+.foot > .left > select {
+  background-color: white;
+  border: none;
+  outline: none;
+}
+.foot > .right > button {
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.foot > .right > .active {
+  background-color: rgb(56, 125, 255);
+  color: white;
 }
