@@ -83,6 +83,7 @@ body {
   content: url("https://img.icons8.com/material-outlined/24/387dff/home-page.png");
   cursor: pointer;
 }
+
 .dashwrap::after {
   display: inline-block;
   text-rendering: auto;
