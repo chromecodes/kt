@@ -187,8 +187,14 @@ body {
   display: none;
 }
 .pagesCnt > div > .subDiv > div {
-  padding: 15px 0;
+  margin-top: 20px;
+  cursor: pointer;
 }
+
+.pagesCnt > div > .subDiv > div:hover {
+  color: rgb(56, 125, 255);
+}
+
 .pagesCnt > div > span {
   display: flex;
   align-items: center;
@@ -408,6 +414,9 @@ img {
   justify-content: center;
   gap: 3rem;
   color: #616a82;
+}
+.c1 > input {
+  outline-color: #616a82;
 }
 .c2 {
   color: black;
