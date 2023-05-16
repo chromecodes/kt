@@ -83,7 +83,6 @@ body {
   content: url("https://img.icons8.com/material-outlined/24/387dff/home-page.png");
   cursor: pointer;
 }
-
 .dashwrap::after {
   display: inline-block;
   text-rendering: auto;
@@ -268,6 +267,9 @@ img {
   content: "\f002";
   cursor: pointer;
 }
+.bell:hover {
+  color: #387dff;
+}
 .bell::before {
   display: inline-block;
   text-rendering: auto;
@@ -278,23 +280,20 @@ img {
   cursor: pointer;
 }
 .notificaion::before {
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font: var(--fa-font-regular);
-  content: "\f0c8";
   cursor: pointer;
-
   content: url("https://img.icons8.com/external-tal-revivo-regular-tal-revivo/16/616a82/external-blank-file-format-application-with-circular-dot-wireframe-regular-tal-revivo.png");
 }
+.notificaion:hover::before {
+  content: url("https://img.icons8.com/external-tal-revivo-regular-tal-revivo/16/387dff/external-blank-file-format-application-with-circular-dot-wireframe-regular-tal-revivo.png");
+}
 .menu::before {
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font: var(--fa-font-solid);
   content: url("https://img.icons8.com/ios-glyphs/16/616a82/grid-2.png");
   rotate: 45deg;
   cursor: pointer;
+}
+.menu:hover:before {
+  content: url("https://img.icons8.com/ios-glyphs/16/387dff/grid-2.png");
+  rotate: 45deg;
 }
 .wrapper {
   padding: 0 2rem;
@@ -454,6 +453,10 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+.foot > .left > select:hover {
+  background-color: rgba(56, 126, 255, 0.2);
 }
 .foot > .left > select {
   color: #616a82;
@@ -483,6 +486,9 @@ img {
 .foot > .right > .active:hover {
   background-color: rgb(56, 125, 255);
   color: white;
+}
+input[type="checkbox"] {
+  cursor: pointer;
 }
 
 .dot {
