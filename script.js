@@ -6,9 +6,13 @@ let checks = checkwrap.querySelectorAll("input");
 let selected = 0;
 
 const expand = (e) => {
+  let arrow = e.target;
   let ind = e.target.dataset.index;
+  arrow.classList.toggle("up");
   let exps = document.querySelector(`.v${ind}`);
   exps.classList.toggle("expand");
+  arrow.style.content = "asd";
+  console.log(e.target.textContent);
 };
 
 const updateSelected = () => {

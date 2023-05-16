@@ -74,8 +74,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
-
+.dash:hover {
+  color: rgb(56, 125, 255);
+}
+.dash:hover::before {
+  content: url("https://img.icons8.com/material-outlined/24/387dff/home-page.png");
+  cursor: pointer;
+}
 .dashwrap::after {
   display: inline-block;
   text-rendering: auto;
@@ -93,6 +100,7 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   content: url("https://img.icons8.com/material-outlined/24/616a82/home-page.png");
+  cursor: pointer;
 }
 .users::before {
   display: inline-block;
@@ -536,6 +544,19 @@ img {
 .crt {
   color: rgb(56, 125, 255);
 }
+
 .crt > span::after {
+  color: #132144;
+}
+
+.pagesCnt > div > span > .up::after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f077";
+  padding-right: 0.5rem;
+  cursor: pointer;
+  font-size: 12px;
   color: #132144;
 }
